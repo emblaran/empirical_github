@@ -1,6 +1,7 @@
 clear
 close all
 crsp=readtable('crsp_port.csv');
+
 Rf=readtable('Rf_mkt.CSV');
 
 crsp.yymm=12*year(crsp.date)+month(crsp.date);
